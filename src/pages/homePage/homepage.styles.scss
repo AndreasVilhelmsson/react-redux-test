@@ -1,0 +1,47 @@
+.header {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  height: 30rem;
+  margin-top: 2rem;
+
+  position: relative;
+}
+
+.options {
+  top: 3px;
+  width: 50%;
+  height: 20%;
+  margin: 0 auto;
+  justify-content: center;
+
+  position: relative;
+
+  ul {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    width: 50%;
+    li {
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      display: inline-block;
+      padding: 0px 15px;
+    }
+  }
+}
+
+.option {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+option:hover {
+  font-weight: bolder;
+}

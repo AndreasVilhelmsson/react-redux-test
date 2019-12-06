@@ -1,0 +1,25 @@
+.contract-container {
+  display: block;
+
+  h1 {
+    top: 30px;
+    left: 55rem;
+  }
+}
+
+.contract-list {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  max-width: 800px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 100px;
+  }
+}

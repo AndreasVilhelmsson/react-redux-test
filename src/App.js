@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import HomePage from "./pages/homePage/homepage.components.jsx";
+import ContractListPage from "./pages/contractListPage/contractlistpage.components.jsx";
+import CustomerListPage from "./pages/customerlistpage/customerlistpage.components.jsx";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import {
+  showAllCustomers,
+  deleteCurrentCustomer
+} from "./redux/customers/customer.actions";
+import { showContracts } from "./redux/contracts/contracts.actions";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Switch>
+        <Route path='/' exact component={HomePage} />
+        <Route path='/contracts/' component={ContractListPage} />
+        <Route exact path='/customer' component={CustomerListPage} />
+      </Switch>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    list: state
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(
+    {
+      showContracts: showContracts,
+      showAllCustomers: showAllCustomers,
+      deleteCurrentCustomer: deleteCurrentCustomer
+    },
+    dispatch
+  );
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

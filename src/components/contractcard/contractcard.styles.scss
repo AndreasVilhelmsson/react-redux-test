@@ -1,0 +1,21 @@
+.cardcontainer {
+  width: 8rem;
+  height: 10rem;
+  list-style-type: none;
+  color: rgb(123, 167, 123);
+  border: solid 2px black;
+  margin: 2px;
+  font-size: 20px;
+  box-shadow: 0.2rem 0.1rem 0.5rem rgba(#000, 0.5);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.02);
+    cursor: pointer;
+  }
+
+  .cardtitle {
+    margin-bottom: 24px;
+    padding: 4px;
+  }
+}
