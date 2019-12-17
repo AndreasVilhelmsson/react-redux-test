@@ -1,8 +1,9 @@
-/* export const deleteCustomerList = (customer, action) => {
+export const deleteCustomerList = (customer, action) => {
   const deleteCustomer = customer.filter(x => x.id !== action.payload);
   return deleteCustomer;
 };
 
+/*
 export const customerContractList = (contract, customerId) => {
   const customerContractList = contract.find(
     contracts => idCustomer === idCustomer

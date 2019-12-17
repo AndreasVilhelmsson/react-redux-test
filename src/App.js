@@ -6,10 +6,7 @@ import ContractListPage from "./pages/contractListPage/contractlistpage.componen
 import CustomerListPage from "./pages/customerlistpage/customerlistpage.components.jsx";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import {
-  showAllCustomers,
-  deleteCurrentCustomer
-} from "./redux/customers/customer.actions";
+import { showAllCustomers } from "./redux/customers/customer.actions";
 import { showContracts } from "./redux/contracts/contracts.actions";
 
 function App() {
@@ -34,8 +31,8 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators(
     {
       showContracts: showContracts,
-      showAllCustomers: showAllCustomers,
-      deleteCurrentCustomer: deleteCurrentCustomer
+      showAllCustomers: showAllCustomers
+      /* deleteCurrentCustomer: deleteCurrentCustomer */
     },
     dispatch
   );

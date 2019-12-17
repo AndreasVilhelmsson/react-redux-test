@@ -15,5 +15,4 @@ const ContractReducer = (state = INITIAL_STATE, action) => {
       return state;
   }
 };
-
 export default ContractReducer;

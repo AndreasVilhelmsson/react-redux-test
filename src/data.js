@@ -17,7 +17,7 @@ export const data = {
     },
     {
       id: "1",
-      customerId: "1",
+      customerId: "2",
       name: "contract"
     },
     {
@@ -27,7 +27,7 @@ export const data = {
     },
     {
       id: "3",
-      customerId: "1",
+      customerId: "2",
       name: "contract"
     },
     {
@@ -37,7 +37,7 @@ export const data = {
     },
     {
       id: "5",
-      customerId: "1",
+      customerId: "2",
       name: "contract"
     },
     {
@@ -47,7 +47,7 @@ export const data = {
     },
     {
       id: "7",
-      customerId: "1",
+      customerId: "2",
       name: "contract"
     },
     {
@@ -57,7 +57,7 @@ export const data = {
     },
     {
       id: "9",
-      customerId: "1",
+      customerId: "2",
       name: "contract"
     },
     {
@@ -67,7 +67,7 @@ export const data = {
     },
     {
       id: "11",
-      customerId: "1",
+      customerId: "2",
       name: "contract"
     },
     {
@@ -82,7 +82,7 @@ export const data = {
     },
     {
       id: "14",
-      customerId: "2",
+      customerId: "1",
       name: "contract"
     },
     {
@@ -92,7 +92,7 @@ export const data = {
     },
     {
       id: "16",
-      customerId: "2",
+      customerId: "1",
       name: "contract"
     },
     {
@@ -102,7 +102,7 @@ export const data = {
     },
     {
       id: "18",
-      customerId: "2",
+      customerId: "1",
       name: "contract"
     },
     {
@@ -112,7 +112,7 @@ export const data = {
     },
     {
       id: "20",
-      customerId: "2",
+      customerId: "1",
       name: "contract"
     },
     {
@@ -122,7 +122,7 @@ export const data = {
     },
     {
       id: "22",
-      customerId: "2",
+      customerId: "1",
       name: "contract"
     },
     {
@@ -132,7 +132,7 @@ export const data = {
     },
     {
       id: "24",
-      customerId: "2",
+      customerId: "1",
       name: "contract"
     },
     {

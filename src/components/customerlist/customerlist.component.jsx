@@ -1,16 +1,13 @@
 import React from "react";
-import { connect } from "react-redux";
-import ContractReducer from "../../redux/contracts/contract.reducer";
 import "./customerlist.styles.scss";
-import CustomerCard from "../customercard/customercard";
+import CustomerCard from "../customercard/customercard.component.js";
 
 const CustomerList = props => {
-  const contract = props.contracts;
-  return props.customers.map(customer => (
+  console.log(props);
+  return props.customer.customers.map(customer => (
     <div>
-      <CustomerCard key={customer.id} {...customer} {...contract} />
+      <CustomerCard key={customer.id} {...customer} />
     </div>
   ));
 };
-
 export default CustomerList;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./contractList.styles.scss";
-import ContractCard from "../contractcard/contractCard.component";
+import ContractCard from "../contractcard/contractcard.component";
 
 const ContractList = props =>
   props.contracts

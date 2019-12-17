@@ -1,8 +1,13 @@
-import { SHOW_ALL_CUSTOMERS } from "./customer.actions";
+import {
+  SHOW_ALL_CUSTOMERS,
+  DELETE_CURRENT_CUSTOMER
+} from "./customer.actions";
+
 import { deleteCustomerList } from "./customer.utils";
 
 const INITIAL_STATE = {
-  customer: []
+  customer: [],
+  id: []
 };
 
 const CustomerReducer = (state = INITIAL_STATE, action) => {
@@ -12,8 +17,17 @@ const CustomerReducer = (state = INITIAL_STATE, action) => {
         ...state,
         customer: action.payload
       };
+    case DELETE_CURRENT_CUSTOMER:
+      return {
+        ...state,
+        state: state.customer.customers.filter(
+          customer => customer.id !== action.id
+        )
+      };
+
     default:
       return state;
   }
 };
+
 export default CustomerReducer;

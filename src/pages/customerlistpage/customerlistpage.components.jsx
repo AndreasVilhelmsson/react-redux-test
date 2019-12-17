@@ -13,7 +13,7 @@ class CustomerListPage extends React.Component {
         </span>
         <div className='contract-list'>
           <ul className='row'>
-            <CustomerList {...this.props.customer} />
+            <CustomerList {...this.props} key={this.props.customer.id} />
           </ul>
         </div>
       </div>
@@ -25,5 +25,4 @@ function mapStateToProps(state) {
     customer: state.customer.customer
   };
 }
-
 export default connect(mapStateToProps, { CustomerReducer })(CustomerListPage);
