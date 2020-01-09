@@ -32,7 +32,6 @@ const mapDispatchToProps = dispatch => {
     {
       showContracts: showContracts,
       showAllCustomers: showAllCustomers
-      /* deleteCurrentCustomer: deleteCurrentCustomer */
     },
     dispatch
   );

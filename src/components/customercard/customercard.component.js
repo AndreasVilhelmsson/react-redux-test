@@ -47,24 +47,7 @@ function mapStateToProps(state) {
   };
 }
 
-// binds on `props` change
-/* const mapDispatchToProps = (dispatch, id) => {
-  console.log(typeof customer);
-  return {
-    customer: () => dispatch(deleteCurrentCustomer(id))
-  };
-}; */
-
-/* const mapDispatchToProps = dispatch => {
-  return {
-    customer: id => dispatch(deleteCurrentCustomer(id))
-  };
-}; */
-
-export default connect(
-  mapStateToProps,
-  /* mapDispatchToProps, */ {
-    ContractReducer,
-    CustomerReducer
-  }
-)(CustomerCard);
+export default connect(mapStateToProps, {
+  ContractReducer,
+  CustomerReducer
+})(CustomerCard);
