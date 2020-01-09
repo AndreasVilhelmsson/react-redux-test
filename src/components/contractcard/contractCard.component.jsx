@@ -9,7 +9,7 @@ const ContractCard = ({ name, id }) => {
           {name} {id}
         </b>
       </div>
-      <p>Lorem ipsum</p>
+      <p>Lorem ipsum </p>
     </li>
   );
 };
